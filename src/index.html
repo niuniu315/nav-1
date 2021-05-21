@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>小牛牛/前端导航</title>
+    <style>
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+      </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon"  href="images/favicon.ico">
+    <iframe frameborder="no" border="0" margin-width="0" margin-height="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1420016220&auto=1&height=66"></iframe>
+  </head>
+  <body>
+    <header class="globalHeader">
+      <form class="searchForm" method="get"
+        action="https://www.baidu.com/s"
+        target="_blank"
+      >
+      <input id="input" type="text" name="wd" autocomplete="off" spellcheck="false" role="combobox" placeholder="在 百度 上搜索，或者输入一个网址" aria-live="polite">
+      <button type="submit">搜索</button>
+      </form>
+    </header>
+
+    <main class="globalMain">
+      <ul class="siteList">
+        
+        <li class="last">
+          <div class="addButton">
+            <div class="icon1">
+             <svg class="icon" >
+              <use xlink:href="#icon-add"></use>
+             </svg>
+          </div>
+          <div class="text">新增网站</div>
+        </li>
+      </ul>
+    </main>
+    <script src="//at.alicdn.com/t/font_2552598_6fcd3hg7mtc.js"></script>
+    <script src="//at.alicdn.com/t/font_2552598_485xgwxpu6n.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
