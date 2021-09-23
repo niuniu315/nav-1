@@ -1,218 +1,185 @@
 /* css reset */
+
 * {
-  box-sizing: border-box;
-}
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-ul,
-ol {
-  list-style: none;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-img {
-  max-width: 100%;
-  max-height: 100%;
+    box-sizing: border-box;
 }
 
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 /* style */
+
 body {
-  background-image: url("https://desk-fd.zol-img.com.cn/t_s960x600c5/g2/M00/0D/01/ChMlWVW246-IGB2DAAHyBVLH9bEAAHuiwIKN3UAAfId413.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; /* 背景图片100% */
+    background-image: url('https://desk-fd.zol-img.com.cn/t_s960x600c5/g2/M00/0D/01/ChMlWVW246-IGB2DAAHyBVLH9bEAAHuiwIKN3UAAfId413.jpg');
+    min-height: 100vh;
+    min-width: 100vw;
 }
-.header-wrapper {
-  border: 1px solid red;
-  padding: 15px;
-}
-.weather {
-  font-size: 12px;
-}
-.weather > p {
-  display: inline-block;
-  margin: 7px 0;
-  vertical-align: top;
-}
-.weather .icon {
-  width: 32px;
-  height: 32px;
-  margin-right: 10px;
-}
-.weather .city {
-  cursor: pointer;
-}
-.weather .air {
-  margin: 0 5px;
-}
-.weather .pm {
-  display: inline-block;
-}
-.weather .temp {
-  display: block;
-}
-.city-box {
-  display: none;
-  top: 46px;
-  left: 42px;
-  position: absolute;
-  width: 262px;
-  height: 324px;
-  border: 1px solid hsla(0, 0%, 59%, 0.4);
-  border-radius: 4px;
-  background-color: #fff;
-  color: #555;
-  z-index: 10;
-  font-size: 12px;
-}
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-.city-input {
-  display: block;
-  width: 220px;
-  height: 30px;
-  outline: none;
-  margin: 11px auto;
-  padding: 0 10px;
-  border: 0 none;
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.03);
-}
-h3 {
-  display: block;
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
+
+@media (min-width: 500px) {
+    body {
+        background-image: url('https://desk-fd.zol-img.com.cn/t_s960x600c5/g2/M00/0D/01/ChMlWVW246-IGB2DAAHyBVLH9bEAAHuiwIKN3UAAfId413.jpg');
+        background-position: center center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
 }
 
 .globalHeader {
-  margin: 50px;
+    margin: 50px;
 }
+
 @media (min-width: 500px) {
-  .globalHeader {
-    margin: 200px 0 100px;
-  }
+    .globalHeader {
+        margin: 200px 0 100px;
+    }
 }
+
 .searchForm {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 @media (min-width: 500px) {
-  .searchForm {
-    max-width: 400px;
+    .searchForm {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.searchForm>input {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px 0 0 15px;
+}
+
+.searchForm>button {
+    white-space: nowrap;
+    padding: 0 15px;
+    border: none;
+    background: #0282b9;
+    color: white;
+    font-size: 16px;
+    border-radius: 0 15px 15px 0px;
+}
+
+.globalMain {
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-  }
 }
-.searchForm > input {
-  width: 100%;
-  height: 30px;
-  padding: 0 10px;
-  border: 1px solid #ddd;
-  border-radius: 15px 0 0 15px;
-}
-.searchForm > button {
-  white-space: nowrap;
-  padding: 0 15px;
-  border: none;
-  background: #0282b9;
-  color: white;
-  font-size: 16px;
-  border-radius: 0 15px 15px 0px;
-}
-.globalMain {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .siteList {
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 @media (min-width: 500px) {
-  .siteList {
-    margin-left: 0;
-    margin-right: -25px;
-    justify-content: flex-start;
-  }
+    .siteList {
+        margin-left: 0;
+        margin-right: -25px;
+        justify-content: flex-start;
+    }
 }
-.siteList > li {
-  margin-bottom: 10px;
+
+.siteList>li {
+    margin-bottom: 10px;
 }
+
 @media (min-width: 500px) {
-  .siteList > li {
-    margin-right: 25px;
-  }
+    .siteList>li {
+        margin-right: 25px;
+    }
 }
+
 .siteList .site {
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: white;
-  border: 1px solid #ddd;
-  padding: 10px 0;
-  position: relative;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    position: relative;
 }
-.siteList .site > .logo {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
+
+.siteList .site>.logo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
 }
-.siteList .site > .link {
-  font-size: 15px;
-  margin-top: 4px;
+
+.siteList .site>.link {
+    font-size: 15px;
+    margin-top: 4px;
 }
-.siteList .site > .close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: none; /* 鼠标不浮上去不显示 */
+
+.siteList .site>.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    /* 鼠标不浮上去不显示 */
 }
-.siteList .site:hover > .close {
-  display: block; /* 鼠标浮上去显示 */
+
+.siteList .site:hover>.close {
+    display: block;
+    /* 鼠标浮上去显示 */
 }
 
 .siteList .addButton {
-  width: 100px;
-  height: 105px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: white;
-  border: 1px solid #ddd;
+    width: 100px;
+    height: 105px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+    border: 1px solid #ddd;
 }
+
 .siteList .addButton .icon {
-  width: 75px;
-  height: 75px;
+    width: 75px;
+    height: 75px;
 }
+
 .siteList .addButton .icon1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .siteList .addButton .text {
-  font-size: 15px;
-  padding-bottom: 10px;
+    font-size: 15px;
+    padding-bottom: 10px;
 }
